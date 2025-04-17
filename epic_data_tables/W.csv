@@ -1,0 +1,94 @@
+table_name,column_name,primary_key,ordinal_position,type,discontinued,description
+WEB_VIEW_INFO,RECORD_ID,N,1,NUMERIC,No,The unique identifier for the extract record. The unique identifier for the extract record.
+WEB_VIEW_INFO,LINE,N,2,INTEGER,No,The line number for the information associated with this record. Multiple pieces of information can be associated with this record. The line number for the information associated with this record. Multiple pieces of information can be associated with this record.
+WEB_VIEW_INFO,WEB_VIEWER_EMP_ID,N,3,VARCHAR,No,Keep track of which users (EMP ID) have viewed the Patient Summary Extracts (LNO) from Web Outreach. Keep track of which users (EMP ID) have viewed the Patient Summary Extracts (LNO) from Web Outreach.
+WEB_VIEW_INFO,WEB_VIEWER_EMP_ID_NAME,N,4,VARCHAR,No,The name of the user record. This name may be hidden. The name of the user record. This name may be hidden.
+WEB_VIEW_INFO,WEB_VIEWER_SMT_ID,N,5,NUMERIC,No,Keep track of the submitter (SMT ID) of the user viewing the Patient Summary Extracts (LNO) from Web Outreach. Keep track of the submitter (SMT ID) of the user viewing the Patient Summary Extracts (LNO) from Web Outreach.
+WEB_VIEW_INFO,WEB_VIEWER_SMT_ID_RECORD_NAME,N,6,VARCHAR,No,The name of the submitter record. The name of the submitter record.
+WEB_VIEW_INFO,WEB_VIEW_DTTM,N,7,DATETIME (Local),No,Keep track of when the Patient Summary Extracts (LNO) was viewed from the Web. Keep track of when the Patient Summary Extracts (LNO) was viewed from the Web.
+WHY_POST_TXP_CPB,ORG_RECORD_ID,N,1,NUMERIC,No,The unique identifier for the organ record. The unique identifier for the organ record.
+WHY_POST_TXP_CPB,LINE,N,2,INTEGER,No,The line number for the information associated with this record. Multiple pieces of information can be associated with this record. The line number for the information associated with this record. Multiple pieces of information can be associated with this record.
+WHY_POST_TXP_CPB,WHY_POST_TXP_CPB_C_NAME,N,3,VARCHAR,No,"Indicates the reason why the transplant recipient needed to return to cardiopulmonary bypass support after the cardiothoracic transplant surgery.
+May contain organization-specific values: Yes
+Category Entries:
+Hemodynamic instability
+Bleeding
+Left ventricular dysfunction
+Right ventricular dysfunction
+Systemic vasodilation
+Other Indicates the reason why the transplant recipient needed to return to cardiopulmonary bypass support after the cardiothoracic transplant surgery. May contain organization-specific values: Yes Category Entries: Hemodynamic instability Bleeding Left ventricular dysfunction Right ventricular dysfunction Systemic vasodilation Other"
+WKQUEUE_REVIEW,ORDER_ID,N,1,NUMERIC,No,The unique identifier for the order record. The unique identifier for the order record.
+WKQUEUE_REVIEW,LINE,N,2,INTEGER,No,The line number for the information associated with this record. Multiple pieces of information can be associated with this record. The line number for the information associated with this record. Multiple pieces of information can be associated with this record.
+WKQUEUE_REVIEW,WKQUEUE_TYPE_C_NAME,N,3,VARCHAR,No,"This stores user group of a workqueue. This is meant to be used in conjunction with the Workqueue Type parameter from Reporting Workbench reports from the Infection Control Find Results template.
+May contain organization-specific values: Yes
+Category Entries:
+Infection Preventionist
+Pharmacist
+NHSN C. diff Reviewer
+NHSN MRSA Reviewer
+NHSN CephR-Klebsiella Reviewer
+NHSN MSSA Reviewer
+NHSN VRE Reviewer
+NHSN CRE-E. coli Reviewer
+NHSN CRE-Klebsiella Reviewer
+NHSN MDR-Acinetobacter Reviewer
+NHSN CRE-Enterobacter Reviewer
+NHSN UTI Reviewer
+NHSN CLABSI Reviewer This stores user group of a workqueue. This is meant to be used in conjunction with the Workqueue Type parameter from Reporting Workbench reports from the Infection Control Find Results template. May contain organization-specific values: Yes Category Entries: Infection Preventionist Pharmacist NHSN C. diff Reviewer NHSN MRSA Reviewer NHSN CephR-Klebsiella Reviewer NHSN MSSA Reviewer NHSN VRE Reviewer NHSN CRE-E. coli Reviewer NHSN CRE-Klebsiella Reviewer NHSN MDR-Acinetobacter Reviewer NHSN CRE-Enterobacter Reviewer NHSN UTI Reviewer NHSN CLABSI Reviewer"
+WKQUEUE_REVIEW,WKQUEUE_REVIEW_TIME_DTTM,N,4,DATETIME (UTC),No,"This stores the review instant for a result. This is the time at which a user clicked the ""Reviewed"" button from a Reporting Workbench Workqueue. Each instant is specific to the Workqueue Type and User ID. This stores the review instant for a result. This is the time at which a user clicked the ""Reviewed"" button from a Reporting Workbench Workqueue. Each instant is specific to the Workqueue Type and User ID."
+WKQUEUE_REVIEW,WKQUEUE_REV_USER_ID,N,5,VARCHAR,No,The reviewer for a result. This is related to the review instant and the workqueue type. The reviewer for a result. This is related to the review instant and the workqueue type.
+WKQUEUE_REVIEW,WKQUEUE_REV_USER_ID_NAME,N,6,VARCHAR,No,The name of the user record. This name may be hidden. The name of the user record. This name may be hidden.
+WKQUEUE_REVIEW,WKQUEUE_REVIEW_C_NAME,N,7,VARCHAR,No,"This stores the review action for a result. This is the action a user took from a Reporting Workbench Workqueue.
+May contain organization-specific values: Yes
+Category Entries:
+Review
+Unreview
+Permanent Review This stores the review action for a result. This is the action a user took from a Reporting Workbench Workqueue. May contain organization-specific values: Yes Category Entries: Review Unreview Permanent Review"
+WKQUEUE_REVIEW,WKQUEUE_REASON_C_NAME,N,8,VARCHAR,No,"This stores a result review reason. This is the discrete reason a user documented while reviewing the result. Each reason is specific to a workqueue and user ID.
+May contain organization-specific values: Yes
+Category Entries:
+Present on admission
+Present on insertion
+Does not meet NHSN criteria
+Contaminant
+Sent to Department of Health
+Infection case created This stores a result review reason. This is the discrete reason a user documented while reviewing the result. Each reason is specific to a workqueue and user ID. May contain organization-specific values: Yes Category Entries: Present on admission Present on insertion Does not meet NHSN criteria Contaminant Sent to Department of Health Infection case created"
+WKQUEUE_REVIEW,WKQUEUE_COMMENT,N,9,VARCHAR,No,This column stores the free text result review comment. This is the comment a user documented while reviewing the result. Each comment is specific to a workqueue and user ID. This column stores the free text result review comment. This is the comment a user documented while reviewing the result. Each comment is specific to a workqueue and user ID.
+WK_COMP_EMPLOYER_ADDRESS,CLAIM_ID,N,1,NUMERIC,No,The unique identifier for the claim info record. The unique identifier for the claim info record.
+WK_COMP_EMPLOYER_ADDRESS,LINE,N,2,INTEGER,No,The line number for the information associated with this record. Multiple pieces of information can be associated with this record. The line number for the information associated with this record. Multiple pieces of information can be associated with this record.
+WK_COMP_EMPLOYER_ADDRESS,WK_COMP_EMPR_ADDR,N,3,VARCHAR,No,Employer address for an accident claim. Employer address for an accident claim.
+WMG_REC_STATUS_HX,MESSAGE_ID,N,1,VARCHAR,No,This column stores the unique identifier for the message record. This column stores the unique identifier for the message record.
+WMG_REC_STATUS_HX,LINE,N,2,INTEGER,No,The line number for the information associated with this record. Multiple pieces of information can be associated with this record. The line number for the information associated with this record. Multiple pieces of information can be associated with this record.
+WMG_REC_STATUS_HX,SDFL_EDIT_DTTM,N,3,DATETIME (Attached),No,The instant when the message status was changed. The instant when the message status was changed.
+WMG_REC_STATUS_HX,SDFL_EDIT_USER_ID,N,4,VARCHAR,No,The unique ID associated with the user record for this row. This column is frequently used to link to the CLARITY_EMP table. The unique ID associated with the user record for this row. This column is frequently used to link to the CLARITY_EMP table.
+WMG_REC_STATUS_HX,SDFL_EDIT_USER_ID_NAME,N,5,VARCHAR,No,The name of the user record. This name may be hidden. The name of the user record. This name may be hidden.
+WMG_REC_STATUS_HX,SDFL_EDIT_ACTION_C_NAME,N,6,VARCHAR,No,"The edit action category number for the message status.
+May contain organization-specific values: No
+Category Entries:
+Soft Delete
+Undo Delete
+Hide
+Unhide The edit action category number for the message status. May contain organization-specific values: No Category Entries: Soft Delete Undo Delete Hide Unhide"
+WORKLOAD_SCORES,PAT_ENC_CSN_ID,N,1,NUMERIC,No,"The unique contact serial number for this contact. This number is unique across all patient encounters in your system. If you use IntraConnect, this is the Unique Contact Identifier (UCI). The unique contact serial number for this contact. This number is unique across all patient encounters in your system. If you use IntraConnect, this is the Unique Contact Identifier (UCI)."
+WORKLOAD_SCORES,LINE,N,2,INTEGER,No,The line number for the information associated with this contact. Multiple pieces of information can be associated with this contact. The line number for the information associated with this contact. Multiple pieces of information can be associated with this contact.
+WORKLOAD_SCORES,PAT_ID,N,3,VARCHAR,No,The unique ID of the patient record for this row. This column is frequently used to link to the PATIENT table. The unique ID of the patient record for this row. This column is frequently used to link to the PATIENT table.
+WORKLOAD_SCORES,CONTACT_DATE,N,4,DATETIME,No,The date of this contact in calendar format. The date of this contact in calendar format.
+WORKLOAD_SCORES,CM_CT_OWNER_ID,N,5,VARCHAR,No,The Community ID (CID) of the instance that owns this contact. This is only populated if you use IntraConnect. The Community ID (CID) of the instance that owns this contact. This is only populated if you use IntraConnect.
+WOUND_THERAPY_TREATMENTS,IP_LDA_ID,N,1,VARCHAR,No,The unique identifier for the wound being treated. The unique identifier for the wound being treated.
+WOUND_THERAPY_TREATMENTS,LINE,N,2,INTEGER,No,The line number for the information associated with this record. Multiple pieces of information can be associated with this record. The line number for the information associated with this record. Multiple pieces of information can be associated with this record.
+WOUND_THERAPY_TREATMENTS,THERAPY_IP_LDA_ID,N,3,VARCHAR,No,The wound therapy that treated this wound. The wound therapy that treated this wound.
+WOUND_THERAPY_TREATMENTS,TREATMENT_START_UTC_DTTM,N,4,DATETIME (UTC),No,The instant treatment started The instant treatment started
+WOUND_THERAPY_TREATMENTS,TREATMENT_END_UTC_DTTM,N,5,DATETIME (UTC),No,The instant treatment ended The instant treatment ended
+WOUND_THERAPY_TREATMENTS,USER_ID,N,6,VARCHAR,No,The user who entered this data The user who entered this data
+WOUND_THERAPY_TREATMENTS,USER_ID_NAME,N,7,VARCHAR,No,The name of the user record. This name may be hidden. The name of the user record. This name may be hidden.
+WOUND_THERAPY_TREATMENTS,ENTRY_UTC_DTTM,N,8,DATETIME (UTC),No,The instant the user entered this data The instant the user entered this data
+WOUND_THERAPY_TREATMENTS,EDITED_LINE,N,9,INTEGER,No,"The line number for the previously documented value in the audit trail, if this line has been edited. Corresponds to LINE in WOUND_THERAPY_TREAT_AUDIT. The line number for the previously documented value in the audit trail, if this line has been edited. Corresponds to LINE in WOUND_THERAPY_TREAT_AUDIT."
+WOUND_THERAPY_TREAT_AUDIT,IP_LDA_ID,N,1,VARCHAR,No,The unique identifier for the wound. The unique identifier for the wound.
+WOUND_THERAPY_TREAT_AUDIT,LINE,N,2,INTEGER,No,The line number for the information associated with this record. Multiple pieces of information can be associated with this record. The line number for the information associated with this record. Multiple pieces of information can be associated with this record.
+WOUND_THERAPY_TREAT_AUDIT,THERAPY_IP_LDA_ID,N,3,VARCHAR,No,The previously documented wound therapy device that treated this wound. The previously documented wound therapy device that treated this wound.
+WOUND_THERAPY_TREAT_AUDIT,TREATMENT_START_UTC_DTTM,N,4,DATETIME (UTC),No,The previously documented treatment start instant The previously documented treatment start instant
+WOUND_THERAPY_TREAT_AUDIT,TREATMENT_END_UTC_DTTM,N,5,DATETIME (UTC),No,The previously documented treatment end instant The previously documented treatment end instant
+WOUND_THERAPY_TREAT_AUDIT,USER_ID,N,6,VARCHAR,No,The user who previously documented this data The user who previously documented this data
+WOUND_THERAPY_TREAT_AUDIT,USER_ID_NAME,N,7,VARCHAR,No,The name of the user record. This name may be hidden. The name of the user record. This name may be hidden.
+WOUND_THERAPY_TREAT_AUDIT,ENTRY_UTC_DTTM,N,8,DATETIME (UTC),No,The instant this data was previously documented at The instant this data was previously documented at
+WOUND_THERAPY_TREAT_AUDIT,EDITED_LINE,N,9,INTEGER,No,"The line number for the value documented before this line was entered, if this was not the first entry. Corresponds to the value of LINE for another row in WOUND_THERAPY_TREAT_AUDIT. The line number for the value documented before this line was entered, if this was not the first entry. Corresponds to the value of LINE for another row in WOUND_THERAPY_TREAT_AUDIT."

@@ -1,0 +1,232 @@
+table_name,column_name,primary_key,ordinal_position,type,discontinued,description
+KEYSTONE_DEPENDENCIES,ORDER_ID,N,1,NUMERIC,No,The unique identifier for the order record. The unique identifier for the order record.
+KEYSTONE_DEPENDENCIES,LINE,N,2,INTEGER,No,The line number for the information associated with this record. Multiple pieces of information can be associated with this record. The line number for the information associated with this record. Multiple pieces of information can be associated with this record.
+KEYSTONE_DEPENDENCIES,KSTONE_DEPENDENCIES_ID,N,3,NUMERIC,No,The unique identifier of any orders that are considered a dependency of the order record for this row. Discontinuing the current order will prompt the user to consider discontinuing the other orders in this list. The unique identifier of any orders that are considered a dependency of the order record for this row. Discontinuing the current order will prompt the user to consider discontinuing the other orders in this list.
+KIDMED_R1_SC,CLAIM_ID,N,1,NUMERIC,No,The unique identifier for the claim information record. The unique identifier for the claim information record.
+KIDMED_R1_SC,LINE,N,2,INTEGER,No,The line number for the information associated with this record. Multiple pieces of information can be associated with this record. The line number for the information associated with this record. Multiple pieces of information can be associated with this record.
+KIDMED_R1_SC,KIDMED_R1_SC_C_NAME,N,3,VARCHAR,No,"Stores the suspected conditions for referral 1 in the claim information record.
+May contain organization-specific values: Yes
+Category Entries:
+Medical
+Vision
+Hearing
+Dental
+Nutritional
+Developmental
+Abuse/Neglect
+Psychological/Social
+Speech/Language Stores the suspected conditions for referral 1 in the claim information record. May contain organization-specific values: Yes Category Entries: Medical Vision Hearing Dental Nutritional Developmental Abuse/Neglect Psychological/Social Speech/Language"
+KIDMED_R2_SC,CLAIM_ID,N,1,NUMERIC,No,The unique identifier for the claim information record. The unique identifier for the claim information record.
+KIDMED_R2_SC,LINE,N,2,INTEGER,No,The line number for the information associated with this record. Multiple pieces of information can be associated with this record. The line number for the information associated with this record. Multiple pieces of information can be associated with this record.
+KIDMED_R2_SC,KIDMED_R2_SC_C_NAME,N,3,VARCHAR,No,"Stores the suspected conditions for referral 2 in the claim information record.
+May contain organization-specific values: Yes
+Category Entries:
+Medical
+Vision
+Hearing
+Dental
+Nutritional
+Developmental
+Abuse/Neglect
+Psychological/Social
+Speech/Language Stores the suspected conditions for referral 2 in the claim information record. May contain organization-specific values: Yes Category Entries: Medical Vision Hearing Dental Nutritional Developmental Abuse/Neglect Psychological/Social Speech/Language"
+KIDMED_R3_SC,CLAIM_ID,N,1,NUMERIC,No,The unique identifier for the claim information record. The unique identifier for the claim information record.
+KIDMED_R3_SC,LINE,N,2,INTEGER,No,The line number for the information associated with this record. Multiple pieces of information can be associated with this record. The line number for the information associated with this record. Multiple pieces of information can be associated with this record.
+KIDMED_R3_SC,KIDMED_R3_SC_C_NAME,N,3,VARCHAR,No,"Stores the suspected conditions for referral 3 in the claim information record.
+May contain organization-specific values: Yes
+Category Entries:
+Medical
+Vision
+Hearing
+Dental
+Nutritional
+Developmental
+Abuse/Neglect
+Psychological/Social
+Speech/Language Stores the suspected conditions for referral 3 in the claim information record. May contain organization-specific values: Yes Category Entries: Medical Vision Hearing Dental Nutritional Developmental Abuse/Neglect Psychological/Social Speech/Language"
+KIDMED_SC_UC,CLAIM_ID,N,1,NUMERIC,No,The unique identifier for the claim information record. The unique identifier for the claim information record.
+KIDMED_SC_UC,LINE,N,2,INTEGER,No,The line number for the information associated with this record. Multiple pieces of information can be associated with this record. The line number for the information associated with this record. Multiple pieces of information can be associated with this record.
+KIDMED_SC_UC,KIDMED_SC_UC_C_NAME,N,3,VARCHAR,No,"This item stores whether there are suspected conditions for the visit that are under care.
+May contain organization-specific values: Yes
+Category Entries:
+Medical
+Vision
+Hearing
+Dental
+Nutritional
+Developmental
+Abuse/Neglect
+Psychological/Social
+Speech/Language This item stores whether there are suspected conditions for the visit that are under care. May contain organization-specific values: Yes Category Entries: Medical Vision Hearing Dental Nutritional Developmental Abuse/Neglect Psychological/Social Speech/Language"
+KIDNEY_BIOPSY,RESULT_ID,N,1,VARCHAR,No,The unique identifier for the result record. The unique identifier for the result record.
+KIDNEY_BIOPSY,CAP_COMMENTS,N,2,VARCHAR,No,CAP synoptic form item: General comments. CAP synoptic form item: General comments.
+KIDNEY_BIOPSY,SPEC_PROC_SPECIFY,N,3,VARCHAR,No,CAP synoptic form item: Specify the Specimen Procedure. CAP synoptic form item: Specify the Specimen Procedure.
+KIDNEY_BIOPSY,HISTO_TYPE_SPECIFY,N,4,VARCHAR,No,CAP synoptic form item: Specify histologic type. CAP synoptic form item: Specify histologic type.
+KIDNEY_BIOPSY,FUHRMAN_NUCLR_GRD_C_NAME,N,5,VARCHAR,No,"CAP synoptic form item: Histologic Grade (Fuhrman Nuclear Grade).
+May contain organization-specific values: Yes
+Category Entries:
+Not applicable
+GX: Cannot be assessed
+G1: Nuclei round, uniform, approximately 10 µm; nucleoli inconspicuous or absent
+G2: Nuclei slightly irregular, approximately 15 µm; nucleoli evident
+G3: Nuclei very irregular, approximately 20 µm; nucleoli large and prominent
+G4: Nuclei bizarre and multilobated, 20 µm or greater, nucleoli prominent, chromatin 
+Other CAP synoptic form item: Histologic Grade (Fuhrman Nuclear Grade). May contain organization-specific values: Yes Category Entries: Not applicable GX: Cannot be assessed G1: Nuclei round, uniform, approximately 10 µm; nucleoli inconspicuous or absent G2: Nuclei slightly irregular, approximately 15 µm; nucleoli evident G3: Nuclei very irregular, approximately 20 µm; nucleoli large and prominent G4: Nuclei bizarre and multilobated, 20 µm or greater, nucleoli prominent, chromatin Other"
+KIDNEY_BIOPSY,SARCOMATOID_FEAT_C_NAME,N,6,VARCHAR,No,"CAP synoptic form item: Sarcomatoid Features.
+May contain organization-specific values: Yes
+Category Entries:
+Cannot be assessed
+Not identified
+Absent
+Present
+Indeterminate
+Portal vein invasion present
+Hepatic vein invasion present
+Present within tumor nodules
+Present in vessels of parenchyma outside of tumor nodules
+Cannot be determined CAP synoptic form item: Sarcomatoid Features. May contain organization-specific values: Yes Category Entries: Cannot be assessed Not identified Absent Present Indeterminate Portal vein invasion present Hepatic vein invasion present Present within tumor nodules Present in vessels of parenchyma outside of tumor nodules Cannot be determined"
+KIDNEY_BIOPSY,PERCN_SARCOMAT_ELEM,N,7,NUMERIC,No,CAP synoptic form item: Specify Percentage Sarcomatoid Element. CAP synoptic form item: Specify Percentage Sarcomatoid Element.
+KIDNEY_BIOPSY,ADDL_PATH_FIND_SPFY,N,8,VARCHAR,No,CAP synoptic form item: Specify additional pathologic findings. CAP synoptic form item: Specify additional pathologic findings.
+KIDNEY_RESECTION,RESULT_ID,N,1,VARCHAR,No,The unique identifier for the result record. The unique identifier for the result record.
+KIDNEY_RESECTION,TUMOR_SITE_SPECIFY,N,2,VARCHAR,No,CAP synoptic form item: Specify tumor site. CAP synoptic form item: Specify tumor site.
+KIDNEY_RESECTION,CAP_COMMENTS,N,3,VARCHAR,No,CAP synoptic form item: General comments. CAP synoptic form item: General comments.
+KIDNEY_RESECTION,SPEC_PROC_SPECIFY,N,4,VARCHAR,No,CAP synoptic form item: Specify the Specimen Procedure. CAP synoptic form item: Specify the Specimen Procedure.
+KIDNEY_RESECTION,TUMOR_SIZE_GREAT,N,5,NUMERIC,No,CAP synoptic form item: Tumor Greatest Size. CAP synoptic form item: Tumor Greatest Size.
+KIDNEY_RESECTION,TUMOR_SIZE_ADDL,N,6,NUMERIC,No,CAP synoptic form item: Tumor Size (length). CAP synoptic form item: Tumor Size (length).
+KIDNEY_RESECTION,TUMOR_SIZE_ADDL2,N,7,NUMERIC,No,CAP synoptic form item: Tumor Size (width). CAP synoptic form item: Tumor Size (width).
+KIDNEY_RESECTION,ADDL_PATH_FIND_SPFY,N,8,VARCHAR,No,CAP synoptic form item: Specify additional pathologic findings. CAP synoptic form item: Specify additional pathologic findings.
+KIDNEY_RESECTION,HIST_TYP_NONCL_SPFY,N,9,VARCHAR,No,CAP synoptic form item: Specify other or nonclassifiable histologic type. CAP synoptic form item: Specify other or nonclassifiable histologic type.
+KIDNEY_RESECTION,TUMOR_SIZE_INDETER,N,10,VARCHAR,No,CAP synoptic form item: Specify Reason Why Tumor Size Is Indeterminate. CAP synoptic form item: Specify Reason Why Tumor Size Is Indeterminate.
+KIDNEY_RESECTION,LYMPH_ND_NUM_XMD,N,11,NUMERIC,No,CAP synoptic form item: Specify the number of lymph nodes examined. CAP synoptic form item: Specify the number of lymph nodes examined.
+KIDNEY_RESECTION,SPEC_SZ_KDN_DMSN1,N,12,NUMERIC,No,CAP synoptic form item: Specify kidney dimension 1 for specimen size. CAP synoptic form item: Specify kidney dimension 1 for specimen size.
+KIDNEY_RESECTION,SPEC_SZ_KDN_DMSN2,N,13,NUMERIC,No,CAP synoptic form item: Specify kidney dimension 2 for specimen size. CAP synoptic form item: Specify kidney dimension 2 for specimen size.
+KIDNEY_RESECTION,SPEC_SZ_KDN_DMSN3,N,14,NUMERIC,No,CAP synoptic form item: Specify kidney dimension 3 for specimen size. CAP synoptic form item: Specify kidney dimension 3 for specimen size.
+KIDNEY_RESECTION,SPEC_SZ_WT,N,15,NUMERIC,No,CAP synoptic form item: Specify weight for specimen size. CAP synoptic form item: Specify weight for specimen size.
+KIDNEY_RESECTION,TM_SZ_GRT_DMSN2,N,16,NUMERIC,No,CAP synoptic form item: Specify Greatest dimension tumor 2 for Tumor Size. CAP synoptic form item: Specify Greatest dimension tumor 2 for Tumor Size.
+KIDNEY_RESECTION,TM_SZ_GRT_DMSN3,N,17,NUMERIC,No,CAP synoptic form item: Specify Greatest dimension tumor 3 for Tumor Size. CAP synoptic form item: Specify Greatest dimension tumor 3 for Tumor Size.
+KIDNEY_RESECTION,TMR_SZ_ND_OTHER,N,18,VARCHAR,No,CAP synoptic form item: Specify details for other tumor size that cannot be determined. CAP synoptic form item: Specify details for other tumor size that cannot be determined.
+KIDNEY_RESECTION,GEROTA_FASCIA_C_NAME,N,19,VARCHAR,No,"CAP synoptic form item: Gerotas Fascia.
+May contain organization-specific values: Yes
+Category Entries:
+Gerota’s fascia intact
+Gerota’s fascia disrupted
+Indeterminate
+Cannot be assessed CAP synoptic form item: Gerotas Fascia. May contain organization-specific values: Yes Category Entries: Gerota’s fascia intact Gerota’s fascia disrupted Indeterminate Cannot be assessed"
+KIDNEY_RESECTION,RENAL_VEIN_C_NAME,N,20,VARCHAR,No,"CAP synoptic form item: Renal Vein.
+May contain organization-specific values: Yes
+Category Entries:
+Renal vein invasion present
+Renal vein invasion not identified
+Indeterminate
+Cannot be assessed CAP synoptic form item: Renal Vein. May contain organization-specific values: Yes Category Entries: Renal vein invasion present Renal vein invasion not identified Indeterminate Cannot be assessed"
+KIDNEY_RESECTION,TM_XTN_AO_PRS_SPEC,N,21,VARCHAR,No,CAP synoptic form item: Specify organ when Tumor extension into adjacent organ present. CAP synoptic form item: Specify organ when Tumor extension into adjacent organ present.
+KIDNEY_RESECTION,DSTC_TM_FRM_MRG_IVL,N,22,NUMERIC,No,CAP synoptic form item: Specify Distance of Tumor from Closest Margin when Margin involvement by tumor not identified. CAP synoptic form item: Specify Distance of Tumor from Closest Margin when Margin involvement by tumor not identified.
+KIDNEY_RESECTION,MG_IVLV_NI_UNIT_C_NAME,N,23,VARCHAR,No,"CAP synoptic form item: Specify unit when Margin involvement by tumor not identified.
+May contain organization-specific values: Yes
+Category Entries:
+mm
+cm CAP synoptic form item: Specify unit when Margin involvement by tumor not identified. May contain organization-specific values: Yes Category Entries: mm cm"
+KIDNEY_RESECTION,MG_IVLV_TM_NI_MS_C_NAME,N,24,VARCHAR,No,"CAP synoptic form item: Specify Margin when Margin involvement by tumor not identified.
+May contain organization-specific values: Yes
+Category Entries:
+Gerota’s fascia
+Renal vein
+Inferior vena cava
+Ureter
+Other CAP synoptic form item: Specify Margin when Margin involvement by tumor not identified. May contain organization-specific values: Yes Category Entries: Gerota’s fascia Renal vein Inferior vena cava Ureter Other"
+KIDNEY_RESECTION,MG_IVLV_TM_NI_OTHER,N,25,VARCHAR,No,CAP synoptic form item: Specify other details for Margin involvement by tumor not identified. CAP synoptic form item: Specify other details for Margin involvement by tumor not identified.
+KIDNEY_RESECTION,MRG_IVLV_TM_OTHER,N,26,VARCHAR,No,CAP synoptic form item: Specify other details when Margin involved by tumor. CAP synoptic form item: Specify other details when Margin involved by tumor.
+KIDNEY_RESECTION,NEPHROGENIC_RESTS_C_NAME,N,27,VARCHAR,No,"CAP synoptic form item: Nephrogenic Rests.
+May contain organization-specific values: Yes
+Category Entries:
+Nephrogenic rests not identified
+Nephrogenic rests present
+Cannot be assessed CAP synoptic form item: Nephrogenic Rests. May contain organization-specific values: Yes Category Entries: Nephrogenic rests not identified Nephrogenic rests present Cannot be assessed"
+KIDNEY_RESECTION,LYM_ND_NUM_IVLV,N,28,NUMERIC,No,CAP synoptic form item: Specify number of lymph nodes involved. CAP synoptic form item: Specify number of lymph nodes involved.
+KIDNEY_RESECTION,DSTNC_MTSS_PRST_ST,N,29,VARCHAR,No,CAP synoptic form item: Specify Site for Distant metastasis present. CAP synoptic form item: Specify Site for Distant metastasis present.
+KIDNEY_RESECTION,S5_BRID_RIGHT_KD_C_NAME,N,30,VARCHAR,No,"CAP synoptic form item: Stage V Bilateral renal involvement at diagnosis Specify Right Kidney Stage.
+May contain organization-specific values: Yes
+Category Entries:
+Stage I
+Stage II
+Stage III
+Stage IV CAP synoptic form item: Stage V Bilateral renal involvement at diagnosis Specify Right Kidney Stage. May contain organization-specific values: Yes Category Entries: Stage I Stage II Stage III Stage IV"
+KIDNEY_RESECTION,S5_BRID_LEFT_KD_C_NAME,N,31,VARCHAR,No,"CAP synoptic form item: Stage V Bilateral renal involvement at diagnosis Specify Left Kidney Stage.
+The category values for this column were already listed for column: S5_BRID_RIGHT_KD_C_NAME CAP synoptic form item: Stage V Bilateral renal involvement at diagnosis Specify Left Kidney Stage. The category values for this column were already listed for column: S5_BRID_RIGHT_KD_C_NAME"
+KIDNEY_RESECTION,TM_FCLT_MFCL_NUM,N,32,NUMERIC,No,CAP synoptic form item: Specify the number of tumors in specimen for Tumor Focality Multifocal. CAP synoptic form item: Specify the number of tumors in specimen for Tumor Focality Multifocal.
+KIDNEY_RESECTION,RLNM_PRSNT_SITE,N,33,VARCHAR,No,CAP synoptic form item: Specify site for Regional lymph node metastasis present. CAP synoptic form item: Specify site for Regional lymph node metastasis present.
+KIDNEY_RESECTION_2,RESULT_ID,N,1,VARCHAR,No,The unique identifier for the result record. The unique identifier for the result record.
+KIDNEY_RESECTION_2,SPEC_PROC_SPECIFY_2,N,2,VARCHAR,No,CAP synoptic form item: Specify the Specimen Procedure. CAP synoptic form item: Specify the Specimen Procedure.
+KIDNEY_RESECTION_2,SPEC_SZ_KDN_DMSN1_2,N,3,NUMERIC,No,CAP synoptic form item: Specify kidney dimension 1 for specimen size. CAP synoptic form item: Specify kidney dimension 1 for specimen size.
+KIDNEY_RESECTION_2,SPEC_SZ_KDN_DMSN2_2,N,4,NUMERIC,No,CAP synoptic form item: Specify kidney dimension 2 for specimen size. CAP synoptic form item: Specify kidney dimension 2 for specimen size.
+KIDNEY_RESECTION_2,SPEC_SZ_KDN_DMSN3_2,N,5,NUMERIC,No,CAP synoptic form item: Specify kidney dimension 3 for specimen size. CAP synoptic form item: Specify kidney dimension 3 for specimen size.
+KIDNEY_RESECTION_2,SPEC_SZ_WT_2,N,6,NUMERIC,No,CAP synoptic form item: Specify weight for specimen size. CAP synoptic form item: Specify weight for specimen size.
+KIDNEY_RESECTION_2,TM_FCLT_MFCL_NUM_2,N,7,NUMERIC,No,CAP synoptic form item: Specify the number of tumors in specimen for Tumor Focality Multifocal. CAP synoptic form item: Specify the number of tumors in specimen for Tumor Focality Multifocal.
+KIDNEY_RESECTION_2,TUMOR_SITE_SPEC_2,N,8,VARCHAR,No,CAP synoptic form item: Specify tumor site. CAP synoptic form item: Specify tumor site.
+KIDNEY_RESECTION_2,TUMOR_SIZE_GREAT_2,N,9,NUMERIC,No,CAP synoptic form item: Tumor Greatest Size. CAP synoptic form item: Tumor Greatest Size.
+KIDNEY_RESECTION_2,TUMOR_SIZE_ADDL_2,N,10,NUMERIC,No,CAP synoptic form item: Tumor Size (length). CAP synoptic form item: Tumor Size (length).
+KIDNEY_RESECTION_2,TUMOR_SIZE_ADDL2_2,N,11,NUMERIC,No,CAP synoptic form item: Tumor Size (width). CAP synoptic form item: Tumor Size (width).
+KIDNEY_RESECTION_2,TUMOR_SIZE_IND_SP_2,N,12,VARCHAR,No,CAP synoptic form item: Specify Reason Why Tumor Size Is Indeterminate. CAP synoptic form item: Specify Reason Why Tumor Size Is Indeterminate.
+KIDNEY_RESECTION_2,TM_SZ_GD_GRT_DMS2_2,N,13,NUMERIC,No,CAP synoptic form item: Specify Greatest dimension tumor 2 for Tumor Size. CAP synoptic form item: Specify Greatest dimension tumor 2 for Tumor Size.
+KIDNEY_RESECTION_2,TM_SZ_GD_GRT_DMS3_2,N,14,NUMERIC,No,CAP synoptic form item: Specify Greatest dimension tumor 3 for Tumor Size. CAP synoptic form item: Specify Greatest dimension tumor 3 for Tumor Size.
+KIDNEY_RESECTION_2,TS_MGD_SP_2,N,15,VARCHAR,No,CAP synoptic form item: Specify details for greatest dimension of multiple tumor size. CAP synoptic form item: Specify details for greatest dimension of multiple tumor size.
+KIDNEY_RESECTION_2,GEROTA_FASCIA_2_C_NAME,N,16,VARCHAR,No,"CAP synoptic form item: Gerotas Fascia.
+May contain organization-specific values: Yes
+Category Entries:
+Gerota’s fascia intact
+Gerota’s fascia disrupted
+Indeterminate
+Cannot be assessed CAP synoptic form item: Gerotas Fascia. May contain organization-specific values: Yes Category Entries: Gerota’s fascia intact Gerota’s fascia disrupted Indeterminate Cannot be assessed"
+KIDNEY_RESECTION_2,RENAL_VEIN_2_C_NAME,N,17,VARCHAR,No,"CAP synoptic form item: Renal Vein.
+May contain organization-specific values: Yes
+Category Entries:
+Renal vein invasion present
+Renal vein invasion not identified
+Indeterminate
+Cannot be assessed CAP synoptic form item: Renal Vein. May contain organization-specific values: Yes Category Entries: Renal vein invasion present Renal vein invasion not identified Indeterminate Cannot be assessed"
+KIDNEY_RESECTION_2,TM_XTN_AO_PRS_SPC_2,N,18,VARCHAR,No,CAP synoptic form item: Specify organ when Tumor extension into adjacent organ present. CAP synoptic form item: Specify organ when Tumor extension into adjacent organ present.
+KIDNEY_RESECTION_2,DSTC_TM_FRM_MG_IV_2,N,19,NUMERIC,No,CAP synoptic form item: Specify Distance of Tumor from Closest Margin when Margin involvement by tumor not identified. CAP synoptic form item: Specify Distance of Tumor from Closest Margin when Margin involvement by tumor not identified.
+KIDNEY_RESECTION_2,MG_IVLV_NI_UNIT_2_C_NAME,N,20,VARCHAR,No,"CAP synoptic form item: Specify unit when Margin involvement by tumor not identified.
+May contain organization-specific values: Yes
+Category Entries:
+mm
+cm CAP synoptic form item: Specify unit when Margin involvement by tumor not identified. May contain organization-specific values: Yes Category Entries: mm cm"
+KIDNEY_RESECTION_2,MG_IVLV_NI_MS_2_C_NAME,N,21,VARCHAR,No,"CAP synoptic form item: Specify Margin when Margin involvement by tumor not identified.
+May contain organization-specific values: Yes
+Category Entries:
+Gerota’s fascia
+Renal vein
+Inferior vena cava
+Ureter
+Other CAP synoptic form item: Specify Margin when Margin involvement by tumor not identified. May contain organization-specific values: Yes Category Entries: Gerota’s fascia Renal vein Inferior vena cava Ureter Other"
+KIDNEY_RESECTION_2,MG_IVLV_TM_NI_OTH_2,N,22,VARCHAR,No,CAP synoptic form item: Specify other details for Margin involvement by tumor not identified. CAP synoptic form item: Specify other details for Margin involvement by tumor not identified.
+KIDNEY_RESECTION_2,MRG_IVLV_TM_OTHER_2,N,23,VARCHAR,No,CAP synoptic form item: Specify other details when Margin involved by tumor. CAP synoptic form item: Specify other details when Margin involved by tumor.
+KIDNEY_RESECTION_2,NEPHRC_REST_2_C_NAME,N,24,VARCHAR,No,"CAP synoptic form item: Nephrogenic Rests.
+May contain organization-specific values: Yes
+Category Entries:
+Nephrogenic rests not identified
+Nephrogenic rests present
+Cannot be assessed CAP synoptic form item: Nephrogenic Rests. May contain organization-specific values: Yes Category Entries: Nephrogenic rests not identified Nephrogenic rests present Cannot be assessed"
+KIDNEY_RESECTION_2,RLNM_PRSNT_SITE_2,N,25,VARCHAR,No,CAP synoptic form item: Specify site for Regional lymph node metastasis present. CAP synoptic form item: Specify site for Regional lymph node metastasis present.
+KIDNEY_RESECTION_2,LYMPH_ND_NUM_XMD_2,N,26,INTEGER,No,CAP synoptic form item: Specify the number of lymph nodes examined. CAP synoptic form item: Specify the number of lymph nodes examined.
+KIDNEY_RESECTION_2,LYM_ND_NUM_IVLV_2,N,27,INTEGER,No,CAP synoptic form item: Specify number of lymph nodes involved. CAP synoptic form item: Specify number of lymph nodes involved.
+KIDNEY_RESECTION_2,DSTNC_MTSS_PRT_ST_2,N,28,VARCHAR,No,CAP synoptic form item: Specify Site for Distant metastasis present. CAP synoptic form item: Specify Site for Distant metastasis present.
+KIDNEY_RESECTION_2,S5_BRID_RT_KD_2_C_NAME,N,29,VARCHAR,No,"CAP synoptic form item: Stage V Bilateral renal involvement at diagnosis Specify Right Kidney Stage.
+May contain organization-specific values: Yes
+Category Entries:
+Stage I
+Stage II
+Stage III
+Stage IV CAP synoptic form item: Stage V Bilateral renal involvement at diagnosis Specify Right Kidney Stage. May contain organization-specific values: Yes Category Entries: Stage I Stage II Stage III Stage IV"
+KIDNEY_RESECTION_2,S5_BRID_LT_KD_2_C_NAME,N,30,VARCHAR,No,"CAP synoptic form item: Stage V Bilateral renal involvement at diagnosis Specify Left Kidney Stage.
+The category values for this column were already listed for column: S5_BRID_RT_KD_2_C_NAME CAP synoptic form item: Stage V Bilateral renal involvement at diagnosis Specify Left Kidney Stage. The category values for this column were already listed for column: S5_BRID_RT_KD_2_C_NAME"
+KIDNEY_RESECTION_2,ADDL_PATH_FIND_SP_2,N,31,VARCHAR,No,CAP synoptic form item: Specify additional pathologic findings. CAP synoptic form item: Specify additional pathologic findings.
+KIDNEY_RESECTION_2,HIST_TYPE_SPECIFY_2,N,32,VARCHAR,No,CAP synoptic form item: Second Specify Histologic Type. CAP synoptic form item: Second Specify Histologic Type.
+KIDNEY_RESECTION_2,CAP_COMMENTS_2,N,33,VARCHAR,No,CAP synoptic form item: General comments. CAP synoptic form item: General comments.
+KIOSK_QUESTIONNAIR,PAT_ENC_CSN_ID,N,1,NUMERIC,No,"The unique contact serial number for this contact. This number is unique across all patient encounters in your system. If you use IntraConnect, this is the Unique Contact Identifier (UCI). The unique contact serial number for this contact. This number is unique across all patient encounters in your system. If you use IntraConnect, this is the Unique Contact Identifier (UCI)."
+KIOSK_QUESTIONNAIR,LINE,N,2,INTEGER,No,The line number for the information associated with this contact. Multiple pieces of information can be associated with this contact. The line number for the information associated with this contact. Multiple pieces of information can be associated with this contact.
+KIOSK_QUESTIONNAIR,PAT_ID,N,3,VARCHAR,No,The unique ID of the patient record for this row. This column is frequently used to link to the PATIENT table. The unique ID of the patient record for this row. This column is frequently used to link to the PATIENT table.
+KIOSK_QUESTIONNAIR,PAT_ENC_DATE_REAL,N,4,FLOAT,No,"A unique contact date in decimal format. The integer portion of the number indicates the date of contact. The digits after the decimal distinguish different contacts on the same date and are unique for each contact on that date. For example, .00 is the first/only contact, .01 is the second contact, etc. A unique contact date in decimal format. The integer portion of the number indicates the date of contact. The digits after the decimal distinguish different contacts on the same date and are unique for each contact on that date. For example, .00 is the first/only contact, .01 is the second contact, etc."
+KIOSK_QUESTIONNAIR,CONTACT_DATE,N,5,DATETIME,No,The date of this contact in calendar format. The date of this contact in calendar format.
+KIOSK_QUESTIONNAIR,KIOSK_QUEST_ID,N,6,VARCHAR,No,"The unique ID of the questionnaire assigned to the encounter, which will be presented to the patient at the Welcome kiosk. The unique ID of the questionnaire assigned to the encounter, which will be presented to the patient at the Welcome kiosk."
+KIOSK_QUESTIONNAIR,KIOSK_QUEST_ID_FORM_NAME,N,7,VARCHAR,No,The name of the form associated with the questionnaire. The name of the form associated with the questionnaire.

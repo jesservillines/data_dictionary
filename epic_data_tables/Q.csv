@@ -1,0 +1,175 @@
+table_name,column_name,primary_key,ordinal_position,type,discontinued,description
+QM_GEN_INFO,REGISTRY_DATA_ID,N,1,NUMERIC,No,The unique ID of the registry data record. The unique ID of the registry data record.
+QM_GEN_INFO,PAT_ID,N,2,VARCHAR,No,The unique ID of the patient record for this row. This column is frequently used to link to the PATIENT table. The unique ID of the patient record for this row. This column is frequently used to link to the PATIENT table.
+QM_GEN_INFO,ACUITY_SYSTEM_ID,N,3,NUMERIC,No,"This item stores the scoring system record ID from which the scores are calculated and stored, if applicable. This item is populated when the RDI record is created. This item stores the scoring system record ID from which the scores are calculated and stored, if applicable. This item is populated when the RDI record is created."
+QM_GEN_INFO,ACUITY_SYSTEM_ID_ACUITY_SYSTEM_NAME,N,4,VARCHAR,No,The name of this HDA record. The name of this HDA record.
+QM_GEN_INFO,ORDER_ID,N,5,NUMERIC,No,The associated order ID. The associated order ID.
+QM_GEN_INFO,PARENT_REGISTRY_DATA_ID,N,6,NUMERIC,No,Parent registry data record. Only populated if this is a repeating group record. Parent registry data record. Only populated if this is a repeating group record.
+QM_GEN_INFO,QM_EXT_IDENT_BUNDLE_ID,N,7,NUMERIC,No,The associated QRDA-I external ID bundle's RQG .1 The associated QRDA-I external ID bundle's RQG .1
+QNR_NEXT_UPD_INFO,SERIES_ANS_ID,N,1,NUMERIC,No,The unique ID of the Series Answer record. The unique ID of the Series Answer record.
+QNR_NEXT_UPD_INFO,LINE,N,2,INTEGER,No,The line number for the information associated with this record. Multiple pieces of information can be associated with this record. The line number for the information associated with this record. Multiple pieces of information can be associated with this record.
+QNR_NEXT_UPD_INFO,QNR_NEXT_UPD_DATE,N,3,DATETIME,No,The date on which the next time this Series Answer record is updated The date on which the next time this Series Answer record is updated
+QNR_NEXT_UPD_INFO,QNR_NXT_UPD_ACT_C_NAME,N,4,VARCHAR,No,"The action that will occur the next time this Series Answer record is updated
+May contain organization-specific values: No
+Category Entries:
+Enable
+Disable
+Send Reminder Message The action that will occur the next time this Series Answer record is updated May contain organization-specific values: No Category Entries: Enable Disable Send Reminder Message"
+QNR_NEXT_UPD_INFO,QNR_NEXT_UPD_LINE,N,5,INTEGER,No,This column stores the questionnaire ID corresponding to the next update date. This column stores the questionnaire ID corresponding to the next update date.
+QNR_NEXT_UPD_INFO,QNR_OCCUR_REMAINING,N,6,INTEGER,No,This item stores the number of occurrences remaining for the questionnaire. This item stores the number of occurrences remaining for the questionnaire.
+QRY_ADDL_RECIPIENTS,QUERY_ID,N,1,NUMERIC,No,The unique identifier for the query record. The unique identifier for the query record.
+QRY_ADDL_RECIPIENTS,LINE,N,2,INTEGER,No,The line number for the information associated with this contact. Multiple pieces of information can be associated with this contact. The line number for the information associated with this contact. Multiple pieces of information can be associated with this contact.
+QRY_ADDL_RECIPIENTS,CONTACT_DATE,N,3,DATETIME,No,The date of this contact in calendar format. The date of this contact in calendar format.
+QRY_ADDL_RECIPIENTS,ADDL_RECIPIENT_USER_ID,N,4,VARCHAR,No,The unique ID of the other users who received the query. The unique ID of the other users who received the query.
+QRY_ADDL_RECIPIENTS,ADDL_RECIPIENT_USER_ID_NAME,N,5,VARCHAR,No,The name of the user record. This name may be hidden. The name of the user record. This name may be hidden.
+QRY_ADDL_RECIPIENTS,QUERY_CSN_ID,N,6,NUMERIC,No,The contact serial number (CSN) of the contact. The contact serial number (CSN) of the contact.
+QRY_ADDL_RESPONSE,QUERY_ID,N,1,NUMERIC,No,The unique identifier for the query record. The unique identifier for the query record.
+QRY_ADDL_RESPONSE,LINE,N,2,INTEGER,No,The line number for the information associated with this contact. Multiple pieces of information can be associated with this contact. The line number for the information associated with this contact. Multiple pieces of information can be associated with this contact.
+QRY_ADDL_RESPONSE,CONTACT_DATE,N,3,DATETIME,No,The date of this contact in calendar format. The date of this contact in calendar format.
+QRY_ADDL_RESPONSE,ADDL_RESP_USER_ID,N,4,VARCHAR,No,Stores the non-primary responding users of the query. Stores the non-primary responding users of the query.
+QRY_ADDL_RESPONSE,ADDL_RESP_USER_ID_NAME,N,5,VARCHAR,No,The name of the user record. This name may be hidden. The name of the user record. This name may be hidden.
+QRY_ADDL_RESPONSE,ADDL_RESPONSE_C_NAME,N,6,VARCHAR,No,"Stores the non-most recent responses of the query.
+May contain organization-specific values: No
+Category Entries:
+Not Read
+Read
+Ask Later
+Agree
+Disagree
+Decline
+Clinically Undetermined Stores the non-most recent responses of the query. May contain organization-specific values: No Category Entries: Not Read Read Ask Later Agree Disagree Decline Clinically Undetermined"
+QRY_ADDL_RESPONSE,ADDL_RESP_UTC_DTTM,N,7,DATETIME (UTC),No,Stores the non-most recent response instant of the query in UTC. Stores the non-most recent response instant of the query in UTC.
+QRY_ADDL_RESPONSE,QUERY_CSN_ID,N,8,NUMERIC,No,The contact serial number (CSN) of the contact. The contact serial number (CSN) of the contact.
+QRY_CONTACT_INFO,QUERY_ID,N,1,NUMERIC,No,The unique identifier for the query record. The unique identifier for the query record.
+QRY_CONTACT_INFO,CONTACT_DATE,N,2,DATETIME,No,The date of this contact in calendar format. The date of this contact in calendar format.
+QRY_CONTACT_INFO,QUERY_CSN_ID,N,3,NUMERIC,No,The contact serial number (CSN) of the contact. The contact serial number (CSN) of the contact.
+QRY_CONTACT_INFO,CONTACT_NUM,N,4,INTEGER,No,Contact number to identify the contact in the sequence of contacts. Contact number to identify the contact in the sequence of contacts.
+QRY_CONTACT_INFO,PRIM_RECIPIENT_USER_ID,N,5,VARCHAR,No,The unique ID of the user primarily responsible for the query. The unique ID of the user primarily responsible for the query.
+QRY_CONTACT_INFO,PRIM_RECIPIENT_USER_ID_NAME,N,6,VARCHAR,No,The name of the user record. This name may be hidden. The name of the user record. This name may be hidden.
+QRY_CONTACT_INFO,SENDER_USER_ID,N,7,VARCHAR,No,The sender of this query. The sender of this query.
+QRY_CONTACT_INFO,SENDER_USER_ID_NAME,N,8,VARCHAR,No,The name of the user record. This name may be hidden. The name of the user record. This name may be hidden.
+QRY_CONTACT_INFO,RESPONDING_USER_ID,N,9,VARCHAR,No,The unique ID of the user that responded to the query. The unique ID of the user that responded to the query.
+QRY_CONTACT_INFO,RESPONDING_USER_ID_NAME,N,10,VARCHAR,No,The name of the user record. This name may be hidden. The name of the user record. This name may be hidden.
+QRY_CONTACT_INFO,NLP_STATUS_C_NAME,N,11,VARCHAR,No,"The category ID of the user's response to the query.
+May contain organization-specific values: No
+Category Entries:
+Not Read
+Read
+Ask Later
+Agree
+Disagree
+Decline
+Clinically Undetermined The category ID of the user's response to the query. May contain organization-specific values: No Category Entries: Not Read Read Ask Later Agree Disagree Decline Clinically Undetermined"
+QRY_CONTACT_INFO,NLP_STATUS_UTC_DTTM,N,12,DATETIME (UTC),No,Stores the instant when the Natural Language Processing (NLP) status changes in UTC. Stores the instant when the Natural Language Processing (NLP) status changes in UTC.
+QRY_CONTACT_INFO,EXTERNAL_EVIDENCE,N,13,VARCHAR,No,The external evidence reference resource URL of the query. The external evidence reference resource URL of the query.
+QRY_CONTACT_INFO,INSTANT_OF_ENTRY_DTTM,N,14,DATETIME (Attached),No,The instant a query record was edited. The instant a query record was edited.
+QRY_CONTACT_INFO,RESOLVE_NOTE_CSN_ID,N,15,NUMERIC,No,The note contact serial number (CSN) that resolves this query. The note contact serial number (CSN) that resolves this query.
+QRY_CONTACT_INFO,RESOLVE_ATTEST_NOTE_CSN_ID,N,16,NUMERIC,No,The attestation line (if any) of the note that resolved the query. The attestation line (if any) of the note that resolved the query.
+QRY_CONTACT_INFO,INSTANT_OF_ENTRY_LOC_DTTM,N,17,DATETIME (Attached),No,The instant a contact was created in the patient's local time. The instant a contact was created in the patient's local time.
+QRY_CONTACT_INFO,QUERY_SUBJECT,N,18,VARCHAR,No,This item stores the subject line of a query. This item stores the subject line of a query.
+QRY_CONTACT_INFO,QRY_CONTACT_TYPE_C_NAME,N,19,VARCHAR,No,"The type of update to the query. Not currently populated.
+May contain organization-specific values: No
+No Entries Defined The type of update to the query. Not currently populated. May contain organization-specific values: No No Entries Defined"
+QRY_EVIDENCE,QUERY_ID,N,1,NUMERIC,No,The unique identifier for the query record. The unique identifier for the query record.
+QRY_EVIDENCE,LINE,N,2,INTEGER,No,The line number for the information associated with this contact. Multiple pieces of information can be associated with this contact. The line number for the information associated with this contact. Multiple pieces of information can be associated with this contact.
+QRY_EVIDENCE,CONTACT_DATE,N,3,DATETIME,No,The date of this contact in calendar format. The date of this contact in calendar format.
+QRY_EVIDENCE,EVIDENCE_NAME,N,4,VARCHAR,No,The display name of the evidence. The display name of the evidence.
+QRY_EVIDENCE,EVIDENCE_TYPE_C_NAME,N,5,VARCHAR,No,"The type of evidence used to create a query.
+May contain organization-specific values: No
+Category Entries:
+Problem
+Medication
+Result
+Vital The type of evidence used to create a query. May contain organization-specific values: No Category Entries: Problem Medication Result Vital"
+QRY_EVIDENCE,QUERY_CSN_ID,N,6,NUMERIC,No,The contact serial number (CSN) of the contact. The contact serial number (CSN) of the contact.
+QRY_EVIDENCE_NOTE_CSN_ID,QUERY_ID,N,1,NUMERIC,No,The unique identifier for the query record. The unique identifier for the query record.
+QRY_EVIDENCE_NOTE_CSN_ID,GROUP_LINE,N,2,INTEGER,No,The line number for the information associated with this contact. The line number for the information associated with this contact.
+QRY_EVIDENCE_NOTE_CSN_ID,VALUE_LINE,N,3,INTEGER,No,The line number of one of the multiple values associated with a specific group of data within this contact. The line number of one of the multiple values associated with a specific group of data within this contact.
+QRY_EVIDENCE_NOTE_CSN_ID,CONTACT_DATE,N,4,DATETIME,No,The date of this contact in calendar format. The date of this contact in calendar format.
+QRY_EVIDENCE_NOTE_CSN_ID,EVIDENCE_NOTE_CSN_ID,N,5,NUMERIC,No,The unique ID of the contact of the note record that contains this evidence. The unique ID of the contact of the note record that contains this evidence.
+QRY_EVIDENCE_NOTE_CSN_ID,QUERY_CSN_ID,N,6,NUMERIC,No,The contact serial number (CSN) of the contact. The contact serial number (CSN) of the contact.
+QRY_EVIDENCE_NOTE_IDS,QUERY_ID,N,1,NUMERIC,No,The unique identifier for the query record. The unique identifier for the query record.
+QRY_EVIDENCE_NOTE_IDS,GROUP_LINE,N,2,INTEGER,No,The line number for the information associated with this contact. The line number for the information associated with this contact.
+QRY_EVIDENCE_NOTE_IDS,VALUE_LINE,N,3,INTEGER,No,The line number of one of the multiple values associated with a specific group of data within this contact. The line number of one of the multiple values associated with a specific group of data within this contact.
+QRY_EVIDENCE_NOTE_IDS,CONTACT_DATE,N,4,DATETIME,No,The date of this contact in calendar format. The date of this contact in calendar format.
+QRY_EVIDENCE_NOTE_IDS,EVIDENCE_NOTE_ID,N,5,VARCHAR,No,The unique ID of the note record that contains this evidence. The unique ID of the note record that contains this evidence.
+QRY_EVIDENCE_NOTE_IDS,QUERY_CSN_ID,N,6,NUMERIC,No,The contact serial number (CSN) of the contact. The contact serial number (CSN) of the contact.
+QRY_RECORD_INFO,QUERY_ID,N,1,NUMERIC,No,The unique identifier for the query record. The unique identifier for the query record.
+QRY_RECORD_INFO,EXTERNAL_IDENTIFIER,N,2,VARCHAR,No,The ID received from a third party to uniquely identify the record in their system. The ID received from a third party to uniquely identify the record in their system.
+QRY_RECORD_INFO,STATUS_C_NAME,N,3,VARCHAR,No,"The overall status of the query.
+May contain organization-specific values: No
+Category Entries:
+Active
+Response Received
+Completed
+Deleted
+Deactivated The overall status of the query. May contain organization-specific values: No Category Entries: Active Response Received Completed Deleted Deactivated"
+QRY_RECORD_INFO,PAT_ID,N,4,VARCHAR,No,The patient ID the query refers to. The patient ID the query refers to.
+QRY_RECORD_INFO,PAT_ENC_CSN_ID,N,5,NUMERIC,No,The patient contact (CSN) the query refers to. The patient contact (CSN) the query refers to.
+QRY_RECORD_INFO,CREATION_UTC_DTTM,N,6,DATETIME (UTC),No,The instant the query was created in UTC. The instant the query was created in UTC.
+QRY_RECORD_INFO,UPDATE_UTC_DTTM,N,7,DATETIME (UTC),No,Stores the instant the query record was updated in UTC. Stores the instant the query record was updated in UTC.
+QRY_RECORD_INFO,QUERY_WORKFLOW_C_NAME,N,8,VARCHAR,No,"The workflow this query is a part of (Computer Assisted Physician Documentation (CAPD), Clinical Documentation Improvement, etc.). This value is used to drive functionality and reporting.
+May contain organization-specific values: No
+Category Entries:
+Coding Query
+CDI Query
+Coding Documentation Deficiency
+CAPD
+PB Coding Query The workflow this query is a part of (Computer Assisted Physician Documentation (CAPD), Clinical Documentation Improvement, etc.). This value is used to drive functionality and reporting. May contain organization-specific values: No Category Entries: Coding Query CDI Query Coding Documentation Deficiency CAPD PB Coding Query"
+QRY_RECORD_INFO,QRY_HIDE_PHYS_YN,N,9,VARCHAR,No,"If this is set to 1-Yes, it will prevent physicians from seeing the query in the NoteReader Clinical Documentation Improvement (CDI) activity. If NoteReader CDI is in silent mode, all incoming queries will have this flag set automatically. CDI users can reset this flag by activating the query manually.
+May contain organization-specific values: No
+Category Entries:
+No
+Yes If this is set to 1-Yes, it will prevent physicians from seeing the query in the NoteReader Clinical Documentation Improvement (CDI) activity. If NoteReader CDI is in silent mode, all incoming queries will have this flag set automatically. CDI users can reset this flag by activating the query manually. May contain organization-specific values: No Category Entries: No Yes"
+QRY_RECORD_INFO,RECORD_CREATION_DT,N,10,DATETIME,No,Stores the date the record was created. Stores the date the record was created.
+QRY_RECORD_INFO,INSTANT_OF_UPDATE_DTTM,N,11,DATETIME (Local),No,Stores the instant the record was last locked/unlocked. Stores the instant the record was last locked/unlocked.
+QRY_RESP_NOTE_HX,NOTE_ID,N,1,VARCHAR,No,The unique identifier for the note record. The unique identifier for the note record.
+QRY_RESP_NOTE_HX,LINE,N,2,INTEGER,No,The line number for the information associated with this record. Multiple pieces of information can be associated with this record. The line number for the information associated with this record. Multiple pieces of information can be associated with this record.
+QRY_RESP_NOTE_HX,QRY_RESP_HX_NOTE_ID,N,3,VARCHAR,No,Holds any previous query response notes that were used to respond to a query. Holds any previous query response notes that were used to respond to a query.
+QRY_SUGGESTION_INFO,QUERY_ID,N,1,NUMERIC,No,The unique identifier for the query record. The unique identifier for the query record.
+QRY_SUGGESTION_INFO,LINE,N,2,INTEGER,No,The line number for the information associated with this contact. Multiple pieces of information can be associated with this contact. The line number for the information associated with this contact. Multiple pieces of information can be associated with this contact.
+QRY_SUGGESTION_INFO,CONTACT_DATE,N,3,DATETIME,No,The date of this contact in calendar format. The date of this contact in calendar format.
+QRY_SUGGESTION_INFO,SUGGESTION_NAME,N,4,VARCHAR,No,The display name of the suggested code. The display name of the suggested code.
+QRY_SUGGESTION_INFO,SUGGESTION_PRIM_DX_ID_DX_NAME,N,5,VARCHAR,No,The name of the diagnosis. The name of the diagnosis.
+QRY_SUGGESTION_INFO,SUGGESTION_ALT_DX_ID_DX_NAME,N,6,VARCHAR,No,The name of the diagnosis. The name of the diagnosis.
+QRY_SUGGESTION_INFO,SUGGESTION_TEXT,N,7,VARCHAR,No,The text prompt of the suggestion. The text prompt of the suggestion.
+QRY_SUGGESTION_INFO,SUGGESTION_SELECT_YN,N,8,VARCHAR,No,"Whether the suggestion has been selected by the physician.
+May contain organization-specific values: No
+Category Entries:
+No
+Yes Whether the suggestion has been selected by the physician. May contain organization-specific values: No Category Entries: No Yes"
+QRY_SUGGESTION_INFO,QUERY_CSN_ID,N,9,NUMERIC,No,The contact serial number (CSN) of the contact. The contact serial number (CSN) of the contact.
+QUALITY_TRACKING,ORDER_ID,N,1,NUMERIC,No,The unique identifier for the order record. The unique identifier for the order record.
+QUALITY_TRACKING,LINE,N,2,INTEGER,No,The line number for the information associated with this record. Multiple pieces of information can be associated with this record. The line number for the information associated with this record. Multiple pieces of information can be associated with this record.
+QUALITY_TRACKING,ELEMENT_PRIORITY_C_NAME,N,3,VARCHAR,No,"The priority category ID for the Quality Tracking Priority (a user-entered category value that indicates the relative importance associated with a given quality tracking element on an imaging order).
+May contain organization-specific values: Yes The priority category ID for the Quality Tracking Priority (a user-entered category value that indicates the relative importance associated with a given quality tracking element on an imaging order). May contain organization-specific values: Yes"
+QUAL_MEAS_SEARCH_INFO,QM_TEMPLATE_ID,N,1,NUMERIC,No,The unique identifier for the search/template record. The unique identifier for the search/template record.
+QUAL_MEAS_SEARCH_INFO,QM_TEMPLATE_ID_RECORD_NAME,N,2,VARCHAR,No,This column displays the name of a quality measure search. This column displays the name of a quality measure search.
+QUAL_MEAS_SEARCH_INFO,RECORD_NAME,N,3,VARCHAR,No,This column displays the name of a quality measure search. This column displays the name of a quality measure search.
+QUERY_INSTRUCTIONS,QUERY_ID,N,1,NUMERIC,No,The unique identifier for the query record. The unique identifier for the query record.
+QUERY_INSTRUCTIONS,LINE,N,2,INTEGER,No,The line number for the information associated with this record. Multiple pieces of information can be associated with this record. The line number for the information associated with this record. Multiple pieces of information can be associated with this record.
+QUERY_INSTRUCTIONS,RESOLV_INSTRUCTIONS,N,3,VARCHAR,No,Instructions for how to resolve the query. Instructions for how to resolve the query.
+QUERY_TEXT,QUERY_ID,N,1,NUMERIC,No,The unique identifier for the query record. The unique identifier for the query record.
+QUERY_TEXT,LINE,N,2,INTEGER,No,The line number for the information associated with this contact. Multiple pieces of information can be associated with this contact. The line number for the information associated with this contact. Multiple pieces of information can be associated with this contact.
+QUERY_TEXT,CONTACT_DATE,N,3,DATETIME,No,The date of this contact in calendar format. The date of this contact in calendar format.
+QUERY_TEXT,QUERY_TEXT,N,4,VARCHAR,No,The text of the query. The text of the query.
+QUERY_TEXT,QUERY_CSN_ID,N,5,NUMERIC,No,The contact serial number (CSN) of the contact. The contact serial number (CSN) of the contact.
+QUESR_LST_ANS_INFO,PAT_ID,N,1,VARCHAR,No,The unique ID of the patient record for this row. This column is frequently used to link to the PATIENT table. The unique ID of the patient record for this row. This column is frequently used to link to the PATIENT table.
+QUESR_LST_ANS_INFO,LINE,N,2,INTEGER,No,The line number for the information associated with this record. Multiple pieces of information can be associated with this record. The line number for the information associated with this record. Multiple pieces of information can be associated with this record.
+QUESR_LST_ANS_INFO,QUESR_ANS_FORM_ID,N,3,VARCHAR,No,This column stores recently answered questionnaire IDs. Use the QUESR_ANS_CSN_ID and QUESR_ANS_DDATETIME columns to determine the encounter and last submission instant for each questionnaire. This column stores recently answered questionnaire IDs. Use the QUESR_ANS_CSN_ID and QUESR_ANS_DDATETIME columns to determine the encounter and last submission instant for each questionnaire.
+QUESR_LST_ANS_INFO,QUESR_ANS_FORM_ID_FORM_NAME,N,4,VARCHAR,No,The name of the form associated with the questionnaire. The name of the form associated with the questionnaire.
+QUESR_LST_ANS_INFO,QUESR_ANS_CSN_ID,N,5,NUMERIC,No,This column stores the encounter contact serial number (CSN) for the most recent questionnaire submissions. Use the QUESR_ANS_FORM_ID and QUESR_ANS_CSN_ID columns to determine the form ID and encounter contact serial number for each questionnaire. This column stores the encounter contact serial number (CSN) for the most recent questionnaire submissions. Use the QUESR_ANS_FORM_ID and QUESR_ANS_CSN_ID columns to determine the form ID and encounter contact serial number for each questionnaire.
+QUESR_LST_ANS_INFO,QUESR_ANS_DATETIME,N,6,DATETIME (Attached),No,This column stores the last instant of submission for questionnaires. Use the QUESR_ANS_FORM_ID and QUESR_ANS_CSN_ID columns to determine the form ID and encounter contact serial number for each questionnaire. This column stores the last instant of submission for questionnaires. Use the QUESR_ANS_FORM_ID and QUESR_ANS_CSN_ID columns to determine the form ID and encounter contact serial number for each questionnaire.
+QUESR_PREV_RESP_INFO,ANSWER_ID,N,1,VARCHAR,No,This column stores the unique identifier for the answer record. This column stores the unique identifier for the answer record.
+QUESR_PREV_RESP_INFO,LINE,N,2,INTEGER,No,The line number for the information associated with this record. Multiple pieces of information can be associated with this record. The line number for the information associated with this record. Multiple pieces of information can be associated with this record.
+QUESR_PREV_RESP_INFO,QUESR_RESP_FORM_ID,N,3,VARCHAR,No,This column stores the form IDs of questionnaires that were not displayed to the patient while branching as their previous responses were valid. Use the QUESR_RESP_CSN_ID column to determine the encounter contact serial number for each throttled questionnaire. This column stores the form IDs of questionnaires that were not displayed to the patient while branching as their previous responses were valid. Use the QUESR_RESP_CSN_ID column to determine the encounter contact serial number for each throttled questionnaire.
+QUESR_PREV_RESP_INFO,QUESR_RESP_FORM_ID_FORM_NAME,N,4,VARCHAR,No,The name of the form associated with the questionnaire. The name of the form associated with the questionnaire.
+QUESR_PREV_RESP_INFO,QUESR_RESP_CSN_ID,N,5,NUMERIC,No,This column stores the encounter contact serial number of questionnaires that were not displayed to the patient while branching as their previous responses were valid. use the QUESR_RESP_FORM_ID column to determine the form ID for each throttled questionnaire. This column stores the encounter contact serial number of questionnaires that were not displayed to the patient while branching as their previous responses were valid. use the QUESR_RESP_FORM_ID column to determine the form ID for each throttled questionnaire.
+QUESR_TEMP_ANSWERS,PAT_ID,N,1,VARCHAR,No,The unique ID of the patient record for this row. This column is frequently used to link to the PATIENT table. The unique ID of the patient record for this row. This column is frequently used to link to the PATIENT table.
+QUESR_TEMP_ANSWERS,LINE,N,2,INTEGER,No,The line number for the information associated with this record. Multiple pieces of information can be associated with this record. The line number for the information associated with this record. Multiple pieces of information can be associated with this record.
+QUESR_TEMP_ANSWERS,QUESR_TMP_ANSWER_ID,N,3,VARCHAR,No,The unique ID of the answer set for this row. The unique ID of the answer set for this row.
+QUESR_TEMP_ANSWERS,QUESR_TMP_MYPT_ID,N,4,VARCHAR,No,The unique ID of the patient account for this row. The unique ID of the patient account for this row.
+QUESR_TEMP_ANSWERS,QUESR_TMP_ROOT_ID,N,5,VARCHAR,No,Stores the root questionnaire (LQF) record ID for each questionnaire that has not yet been submitted. Stores the root questionnaire (LQF) record ID for each questionnaire that has not yet been submitted.
+QUESR_TEMP_ANSWERS,QUESR_TMP_ROOT_ID_FORM_NAME,N,6,VARCHAR,No,The name of the form associated with the questionnaire. The name of the form associated with the questionnaire.
+QUESR_TEMP_ANSWERS,HX_QUESR_TMP_ID,N,7,VARCHAR,No,Stores the web-based chart system message records of partially completed history questionnaires that have not been submitted by the patient. Stores the web-based chart system message records of partially completed history questionnaires that have not been submitted by the patient.
+QUESR_TEMP_ANSWERS,CTX_PAT_ENC_CSN_ID,N,8,NUMERIC,No,"If the TEMP_QUESR_SRC_WRKFLW_C is a value of 1, this stores the contact serial number of the patient contact that serves as the appointment context for this temporary questionnaire answer. If the TEMP_QUESR_SRC_WRKFLW_C is a value of 1, this stores the contact serial number of the patient contact that serves as the appointment context for this temporary questionnaire answer."
